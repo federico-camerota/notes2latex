@@ -11,64 +11,10 @@ import java.util.LinkedList;
 import java.io.File;
 import java.io.FileNotFoundException;
 
-class TexBlock{
-    
-    private final String initial_block;
-    private final String end_block;
-
-    TexBlock(String init, String end){
-        
-        initial_block = init;
-        end_block = end;
-    }
-    TexBlock(String init){
-    
-        initial_block = init;
-        end_block = "";
-    }
-
-    String getInit(){
-    
-        return initial_block;
-    }
-    String getEnd(){
-    
-        return end_block;
-    }
-    boolean hasEnder(){
-        
-        return !end_block.equals("");
-    }
-}
 public class LatexNotesParser{
 
 
-    private static final Map<String, TexBlock> TEX_BLOCKS = new HashMap<>();
-    private static final String CONFIG_FILENAME = System.getenv("HOME") + "/.notes2latex";
-    static {
-    
-        try{
-        Scanner s = new Scanner(new File(CONFIG_FILENAME));
-        while (s.hasNext()){
-        
-            Scanner sline = (new Scanner(s.nextLine())).useDelimiter("::");
-            try{
-                TEX_BLOCKS.put(sline.next(), new TexBlock(sline.next(), sline.next()));
-        }
-        catch(NoSuchElementException e){
-        
-            System.err.println("error: invalid format in config file");
-            System.exit(2);
-        }
-        }
-        }
-        catch(FileNotFoundException e){
-        
-            System.err.println("error: config file not found");
-            System.exit(1);
-        }
-
-    }
+    private static final BlockTypes TEX_BLOCKS = new BlockTypes();
     private static final String BLOCK_ENDER = ";;";
 
     private Deque<String> end_stack = new LinkedList<>(); 
