@@ -1,0 +1,44 @@
+;b;::\textbf{::}::
+;e;::\emph{::}::
+;t;::\texttt{::}::
+;it;::\begin{itemize}::\end{itemize}::
+;en;::\begin{enumerate}::\end{enumerate}::
+;i;::\item::::
+;ch;::\chapter*{::}::
+;s;::\section*{::}::
+;ss;::\subsection*{::}::
+;sss;::\subsubsection*{::}::
+;p;::\paragraph{::}::
+;tb;::\smallskip\begin{tcolorbox}::\end{tcolorbox}\smallskip::
+;c;::\begin{center}::\end{center}::
+;fq;::\frac{::}::
+;qf;::}{::::
+;tx;::\text{::}::
+;mb;::\mathbb{::}::
+;art;::\documentclass{article}::::
+;book;::\documentclass{book}::::
+;doc;::\begin{document}::\end{document}::
+;upm;::\usepackage{amsmath}::::
+;uptb;::\usepackage{tcolorbox}::::
+;upms;::\usepackage{amssymb}:::::
+;in;::\input{::}::
+;hat;::\hat{::}::
+;bar;::\bar{::}::
+;norm;::\left\|::\right\|::
+;inf;::\infty ::::
+;uthm;::\usepackage{amsthm}\theoremstyle{plain}\newtheorem{thm}{Theorem}[chapter]\theoremstyle{definition}\newtheorem{defn}[thm]{Definition}\newtheorem{exmp}[thm]{Example}::::
+;thm;::\begin{thm}::\end{thm}::
+;def;::\begin{defn}::\end{defn}::
+;ex;::\begin{exmp}::\end{exmp}::
+;.;::\cdot::::
+;upcode;::\usepackage{listings}\usepackage{color}\definecolor{dkgreen}{rgb}{0,0.6,0}\definecolor{gray}{rgb}{0.5,0.5,0.5}\definecolor{mauve}{rgb}{0.58,0,0.82}\lstset{frame=tb,language=C,aboveskip=3mm,belowskip=3mm,showstringspaces=false,columns=flexible,basicstyle={\small\ttfamily},numbers=none,numberstyle=\tiny\color{gray},keywordstyle=\color{blue},commentstyle=\color{dkgreen},stringstyle=\color{mauve},breaklines=true,breakatwhitespace=true,tabsize=3}::::
+;code;::\smallskip\begin{lstlisting}::\end{lstlisting}\smallskip::
+;clang;::\lstset{language=::}::
+;m;::$::$::
+;mm;::$$::$$::
+;upg;::\usepackage{graphicx}::::
+;pic;::\begin{figure}\centering\includegraphics{::}\end{figure}::
+;umargins;::\usepackage[a4paper,top=1in, left=1in, right=1in, bottom=1in]{geometry}::::
+;apr;::\approx::::
+;uall;::\usepackage{amsthm}\theoremstyle{plain}\newtheorem{thm}{Theorem}[chapter]\theoremstyle{definition}\newtheorem{defn}[thm]{Definition}\newtheorem{exmp}[thm]{Example}\usepackage{listings}\usepackage{color}\definecolor{dkgreen}{rgb}{0,0.6,0}\definecolor{gray}{rgb}{0.5,0.5,0.5}\definecolor{mauve}{rgb}{0.58,0,0.82}\lstset{frame=tb,language=C,aboveskip=3mm,belowskip=3mm,showstringspaces=false,columns=flexible,basicstyle={\small\ttfamily},numbers=none,numberstyle=\tiny\color{gray},keywordstyle=\color{blue},commentstyle=\color{dkgreen},stringstyle=\color{mauve},breaklines=true,breakatwhitespace=true,tabsize=3}\usepackage{graphicx}\usepackage[a4paper,top=1in, left=1in, right=1in, bottom=1in]{geometry}\usepackage{amsmath}\usepackage{tcolorbox}\usepackage{amssymb}::::
+;info;::\title{::}\date{}\author{Federico Camerota}::
